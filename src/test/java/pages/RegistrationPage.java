@@ -3,7 +3,6 @@ package pages;
 import com.codeborne.selenide.Condition;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.*;
 import static org.openqa.selenium.By.id;
@@ -18,6 +17,7 @@ public class RegistrationPage {
     private static final By CONFIRM_PASSWORD = id("registration_password_confirmation");
     private static final By TERMS_OF_USE_CHECKBOX = id("registration_terms_of_use");
     private static final By LOST_PASSWORD_WARNING_CHECKBOX = id("registration_lost_password_warning_registered");
+    private static final String REGISTRATION_MESSAGE = "h1";
 
     public void openPage() {
         open(URL);
@@ -42,4 +42,9 @@ public class RegistrationPage {
         return this;
     }
 
+    public RegistrationPage confirmRegistration (){
+        log.info("Confirm registration message");
+        $(REGISTRATION_MESSAGE).shouldBe(Condition.text("User registered"));
+        return this;
+    }
 }

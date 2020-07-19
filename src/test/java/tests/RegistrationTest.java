@@ -7,11 +7,12 @@ public class RegistrationTest extends BaseTest {
     String password;
 
     @Test
-    public void confirmRegistration (){
+    public void RegistrationANewUser (){
         email = generator.generateRandomEmail();
         password = generator.generateRandomPassword();
-        registrationStep.fillFormForRegistrationANewUser(email, password);
-
+        registrationStep
+                .openRegistrationPage()
+                .fillFormForRegistrationANewUser(email, password)
+                .confirmMessageOfRegistration();
     }
-
 }
