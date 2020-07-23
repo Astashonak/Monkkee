@@ -4,9 +4,8 @@ Monkkee
 Overview:
 ------------------
   
-   ***monkkee – the safest place for your thoughts***
-   ***
-   ***Keep a private and free online diary***
+   #####_monkkee – the safest place for your thoughts_
+   #####_Keep a private and free online diary_
 
 Installation:
 ------------------
@@ -22,9 +21,8 @@ Installation:
 Team:
 ------------------
 
-  _Astashonak_ _Elena_
-  ***
-  _mentor_
+  #####_Astashonak_ _Elena_  
+  #####_mentor_
        
 Scope:
 ------------------
