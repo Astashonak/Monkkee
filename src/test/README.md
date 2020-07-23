@@ -1,59 +1,51 @@
-===============
 Monkkee
 ===============
 
-______________________
 Overview:
-______________________
+------------------
   
-   **monkkee – the safest place for your thoughts**
+   ***monkkee – the safest place for your thoughts***
+   ***
    ***Keep a private and free online diary***
 
-______________________
 Installation:
-______________________
+------------------
 
-   <li>
-       intellij idea
-       java
-       org.apache.maven.plugins
-       io.qameta.allure
-       selenide
-       testng
-       lombok
-   </li> 
-    
-________________
+   <li>intellij idea</li>
+   <li>java</li>
+   <li>org.apache.maven.plugins</li>
+   <li>io.qameta.allure</li>
+   <li>selenide</li>
+   <li>testng</li>
+   lombok
+ 
 Team:
-________________
+------------------
 
   _Astashonak_ _Elena_
+  ***
   _mentor_
        
-____________________
 Scope:
-_____________________
+------------------
     
-   #### Git repository
-   #### checklist
-   #### README.md
-   #### framework structure (Selenide, TestNG, Allure, Lombok)    
-   ####mechanism for interacting with Mailinator 
-   ####tests according to checklist
-   ####CircleCI Connection  
-_____________________
+   ##### Git repository
+   ##### checklist
+   ##### README.md
+   ##### framework structure (Selenide, TestNG, Allure, Lombok)    
+   ##### mechanism for interacting with Mailinator 
+   ##### tests according to checklist
+   ##### CircleCI Connection  
+
 Packages:
-______________________
+------------------
+<li>pages</li>  
+<li>steps</li>
+<li>tests</li>
+<li>utils</li>
+resources
 
-  <li>
-        pages
-        steps
-        tests
-        utils
-        resources
-   </li>
-
-=======================        
+ 
 GIT flow:
 =======================
 
