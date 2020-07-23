@@ -4,8 +4,8 @@ Monkkee
 Overview:
 ------------------
   
-   ####monkkee – the safest place for your thoughts
-   ####Keep a private and free online diary
+   #### monkkee – the safest place for your thoughts
+   #### Keep a private and free online diary
 
 Installation:
 ------------------
