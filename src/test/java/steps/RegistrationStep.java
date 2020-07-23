@@ -11,7 +11,6 @@ public class RegistrationStep {
     public RegistrationStep(){
         registrationPage = new RegistrationPage();
         generator = new Generator();
-
     }
 
     @Step("Открыть monkkee.com страницу регистрации")

@@ -26,17 +26,20 @@ public class RegistrationPage {
     }
 
     public void isPageOpened() {
-        log.info("Registration page opened");
+        log.info("Registration page is opened");
         $(COMPLETE_REGISTRATION_BUTTON).waitUntil(Condition.visible, 10000);
     }
 
     public RegistrationPage proceedRegistration(String email, String password) {
-        log.info("Fill email field" + email);
+        log.info("Fill email field:" + email);
         $(REGISTRATION_EMAIL).sendKeys(email);
-        log.info("Fill password field" + password);
+        log.info("Fill password field:" + password);
         $(REGISTRATION_PASSWORD).sendKeys(password);
+        log.info("Fill confirmation password field:" + password);
         $(CONFIRM_PASSWORD).sendKeys(password);
+        log.info("Click terms of use checkbox");
         $(TERMS_OF_USE_CHECKBOX).click();
+        log.info("Click lost password warning checkbox");
         $(LOST_PASSWORD_WARNING_CHECKBOX).click();
         $(COMPLETE_REGISTRATION_BUTTON).click();
         return this;
