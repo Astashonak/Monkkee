@@ -21,6 +21,7 @@ public class RegistrationPage {
     private static final String REGISTRATION_MESSAGE = "h1";
 
     public void openPage() {
+        log.info("Opening Registration page");
         open(URL);
         sleep(1000);
         isPageOpened();

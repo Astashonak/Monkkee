@@ -4,9 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import steps.LoginStep;
-import steps.MailinatorStep;
-import steps.RegistrationStep;
+import steps.*;
 import utils.Generator;
 
 public class BaseTest {
@@ -15,9 +13,14 @@ public class BaseTest {
    Generator generator;
    MailinatorStep mailinatorStep;
    LoginStep loginStep;
+   EntryStep entryStep;
+   MainStep mainStep;
 
    String email;
    String password;
+   String header;
+   String text;
+   String tag;
 
     @BeforeClass
     public void openBrowser() {
@@ -29,9 +32,14 @@ public class BaseTest {
         generator = new Generator();
         email = generator.generateRandomEmail();
         password = generator.generateRandomPassword();
+        header = generator.generateRandomHeader();
+        text = generator.generateRandomText();
+        tag = generator.generateRandomTag();
         registrationStep = new RegistrationStep();
         mailinatorStep = new MailinatorStep();
         loginStep = new LoginStep();
+        entryStep = new EntryStep();
+        mainStep = new MainStep();
     }
 
     @AfterMethod

@@ -20,6 +20,7 @@ public class LoginPage {
     private static final String CANCEL_BUTTON = "Cancel";
 
     public LoginPage openPage() {
+        log.info("Opening Login page");
         open(URL);
         isPageOpened();
         return this;

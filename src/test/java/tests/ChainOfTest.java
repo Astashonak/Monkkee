@@ -3,7 +3,7 @@ package tests;
 import io.qameta.allure.Link;
 import org.testng.annotations.Test;
 
-public class RegistrationAndLoginTest extends BaseTest {
+public class ChainOfTest extends BaseTest {
 
     @Test(priority = 1, description = "Регистрация нового пользователя на сайте")
     @Link("https://my.monkkee.com/#/")
@@ -28,5 +28,16 @@ public class RegistrationAndLoginTest extends BaseTest {
                 .openLoginPage()
                 .fillFormForLogin(email, password)
                 .confirmAuthorization();
+    }
+
+    @Test(priority = 4, description = "Добавление записи")
+    public void checkAddingEntry() {
+        loginStep
+                .openLoginPage()
+                .fillFormForLogin(email, password);
+        mainStep.clickCreateNewEntry();
+        entryStep.writeTextAndHeaderInToEntry(header, text)
+                .goToMainPage();
+        mainStep.checkEntryByData(header, text);
     }
 }

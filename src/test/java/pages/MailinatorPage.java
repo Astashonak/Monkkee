@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.ex.ElementShould;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
@@ -24,8 +23,9 @@ public class MailinatorPage {
     private static final String CONFIRMATION_MESSAGE = "h1";
 
     public void openPage() {
+        log.info("Opening Mailinator page");
         open(URL);
-        sleep(2000);
+        sleep(1000);
         isPageOpened();
     }
 
@@ -54,7 +54,7 @@ public class MailinatorPage {
 
     public MailinatorPage checkRegistrationConfirmResult() {
         switchTo().window(1);
-        sleep(1000);
+        sleep(2000);
         try {
             log.info("Checking registration message");
             $(CONFIRMATION_MESSAGE).shouldBe(Condition.text("Registration confirmed successfully"));

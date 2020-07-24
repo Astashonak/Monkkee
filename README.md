@@ -16,7 +16,7 @@ Installation:
    <li>io.qameta.allure</li>
    <li>selenide</li>
    <li>testng</li>
-   lombok
+   <li>lombok</li>
  
 Team:
 ------------------
@@ -41,7 +41,7 @@ Packages:
 <li>steps</li>
 <li>tests</li>
 <li>utils</li>
-resources
+<li>resources</li>
 
  
 GIT flow:
