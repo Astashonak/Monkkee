@@ -1,10 +1,10 @@
 package steps;
 
 import io.qameta.allure.Step;
-import pages.EntryPage;
 import pages.MainPage;
 
 public class MainStep {
+
     MainPage mainPage;
 
     public MainStep(){

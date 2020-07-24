@@ -2,7 +2,6 @@ package steps;
 
 import io.qameta.allure.Step;
 import pages.MailinatorPage;
-import utils.Generator;
 
 public class MailinatorStep {
 

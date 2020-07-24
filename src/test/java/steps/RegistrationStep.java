@@ -6,11 +6,9 @@ import utils.Generator;
 
 public class RegistrationStep {
     RegistrationPage registrationPage;
-    Generator generator;
 
     public RegistrationStep(){
         registrationPage = new RegistrationPage();
-        generator = new Generator();
     }
 
     @Step("Открыть monkkee.com страницу регистрации")
@@ -21,7 +19,6 @@ public class RegistrationStep {
 
     @Step("Заполнить форму регистрации")
     public RegistrationStep fillFormForRegistrationANewUser(String email, String password){
-        generator.generateRandomEmail();
         registrationPage.proceedRegistration(email, password);
         return this;
     }

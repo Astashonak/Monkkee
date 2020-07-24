@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import io.qameta.allure.AllureUtils;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 
